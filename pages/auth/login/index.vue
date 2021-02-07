@@ -1,6 +1,7 @@
 <template>
     <v-row justify="center" align="center">
-      <v-card class="row col-md-8 mx-auto">
+      <v-sheet color="white"
+  elevation="2" class="row col-md-8 mx-auto">
         <div class="col-md-6 auth-card-img">
           <img class="text-center" src="/login.jpg" />
         </div>
@@ -58,7 +59,7 @@
             </p>
           </v-card-text>
         </v-col>
-      </v-card>
+      </v-sheet>
     </v-row>
 </template>
 
