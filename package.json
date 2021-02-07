@@ -1,20 +1,21 @@
 {
-  "name": "bridgeAfrik",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@nuxtjs/firebase": "^7.4.1",
-    "core-js": "^3.8.3",
-    "firebase": "^8.2.6",
-    "nuxt": "^2.14.12"
-  },
-  "devDependencies": {
-    "@nuxtjs/vuetify": "^1.11.3"
-  }
+    "name": "bridge-afrik",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "@nuxtjs/firebase": "^7.4.1",
+        "core-js": "^3.8.3",
+        "firebase": "^8.2.6",
+        "nuxt": "^2.14.12",
+        "@nuxtjs/vuetify": "^1.11.3"
+    },
+    "devDependencies": {
+
+    }
 }
