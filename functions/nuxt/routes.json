@@ -1,0 +1,30 @@
+[
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "/home/edouard/Desktop/projets/perso/bridgeAfrik/pages/inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_521cdb75"
+  },
+  {
+    "name": "auth-login",
+    "path": "/auth/login",
+    "component": "/home/edouard/Desktop/projets/perso/bridgeAfrik/pages/auth/login/index.vue",
+    "chunkName": "pages/auth/login/index",
+    "_name": "_1b749d8c"
+  },
+  {
+    "name": "auth-register",
+    "path": "/auth/register",
+    "component": "/home/edouard/Desktop/projets/perso/bridgeAfrik/pages/auth/register/index.vue",
+    "chunkName": "pages/auth/register/index",
+    "_name": "_d9cf5f70"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/edouard/Desktop/projets/perso/bridgeAfrik/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_24b6ba2d"
+  }
+]
