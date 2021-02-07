@@ -83,7 +83,7 @@ export const actions = {
 
 
     },
-    authUser({ commit, dispatch }, authData) {
+    authUser(authData) {
 
         return this.$fire.auth.signInWithEmailAndPassword(authData.email, authData.password)
 
