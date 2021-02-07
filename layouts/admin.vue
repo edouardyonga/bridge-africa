@@ -6,12 +6,13 @@
 
       <div class="nav">
         <nuxt-link to="/">
-          <v-btn text class="mx-4"> STORE </v-btn>
+          <v-btn text class="mx-4"> Store </v-btn>
         </nuxt-link>
 
         <nuxt-link to="/admin">
           <v-btn text class="mx-4"> Admin </v-btn>
         </nuxt-link>
+
 
         <v-btn outlined color="primary" class="mx-2" @click="logout">
           Logout
@@ -20,15 +21,6 @@
     </v-app-bar>
 
     <v-main>
-      <v-carousel>
-        <v-carousel-item
-          v-for="(item, i) in items"
-          :key="i"
-          :src="item.src"
-          reverse-transition="fade-transition"
-          transition="fade-transition"
-        ></v-carousel-item>
-      </v-carousel>
       <v-container>
         <nuxt />
       </v-container>
@@ -74,13 +66,12 @@ export default {
       this.$store
         .dispatch("logout")
         .then(() => {
-          $router.push('/auth/login')
+          $router.push("/auth/login");
         })
         .catch((error) => {
           console.log("LOGGED OUT ERROR");
         });
     },
   },
-
 };
 </script>

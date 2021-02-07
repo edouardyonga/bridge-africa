@@ -5,3 +5,8 @@ a {
 .auth-card-img img {
     width: 100%;
 }
+
+.nuxt-link-exact-active .v-btn {
+    color: white !important;
+    background-color: #e75c18!important;
+}

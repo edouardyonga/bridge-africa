@@ -8,6 +8,8 @@ export default function(context) {
         if (!user) {
             context.redirect('/auth/login')
             console.log("USER NOT LOGGED IN")
+        } else {
+            context.redirect('/')
         }
     });
 
