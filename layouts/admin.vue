@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  middleware: "auth",
+  // middleware: "auth",
 
   data() {
     return {
@@ -66,7 +66,7 @@ export default {
       this.$store
         .dispatch("logout")
         .then(() => {
-          $router.push("/auth/login");
+          this.$router.push("/auth/login");
         })
         .catch((error) => {
           console.log("LOGGED OUT ERROR");

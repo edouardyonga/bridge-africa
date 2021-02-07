@@ -41,13 +41,11 @@
 
 <script>
 export default {
-  middleware: "auth",
+  // middleware: "auth",
 
   data() {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
+    
       items: [
         {
           src:
@@ -63,10 +61,7 @@ export default {
           src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
         },
       ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: "Vuetify.js",
+
     };
   },
   methods: {
@@ -74,7 +69,7 @@ export default {
       this.$store
         .dispatch("logout")
         .then(() => {
-          $router.push('/auth/login')
+          this.$router.push("/auth/login");
         })
         .catch((error) => {
           console.log("LOGGED OUT ERROR");

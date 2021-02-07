@@ -91,7 +91,9 @@ export default {
 
           // this.authDisabler, this.authLoader = false
           this.error = error.message;
-          console.log(error);
+          console.log( error);
+          this.$router.push("/");
+
         });
     },
   },

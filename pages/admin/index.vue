@@ -2,7 +2,7 @@
   <div>
     <h1 class="text-center my-5 display-2">WELCOME</h1>
     <v-row justify="center" align="center">
-      <v-col cols="8" sm="6" md="3" class="mx-auto">
+      <v-col cols="8" sm="6" md="3" class="text-center mx-auto">
         <v-btn class="text-center" outlined @click="addProduct = true">
           <v-icon>mdi-plus</v-icon> ADD A PRODUCT</v-btn
         >
