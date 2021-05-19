@@ -21,7 +21,7 @@
               outlined
               required
             ></v-text-field>
-
+            <VuePhoneNumberInput v-model="yourValue" />
             <v-text-field
               v-model="login.password"
               label="Password"

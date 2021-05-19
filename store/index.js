@@ -66,13 +66,13 @@ export const actions = {
             });
 
     },
-    deleteProduct(product) {
+    deleteProduct({ commit }, product) {
 
         return this.$fire.firestore.collection("products").doc(product.name).delete(product)
 
 
     },
-    editProduct(product) {
+    editProduct({ commit }, product) {
 
         return this.$fire.firestore.collection("products").doc(product.name).update({
             name: product.name,
@@ -83,7 +83,7 @@ export const actions = {
 
 
     },
-    authUser(authData) {
+    authUser({ commit }, authData) {
 
         return this.$fire.auth.signInWithEmailAndPassword(authData.email, authData.password)
 

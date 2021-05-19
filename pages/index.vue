@@ -40,13 +40,34 @@
 
 <script>
 export default {
+  // middleware:'auth',
   data: () => ({
-    
+
   }),
   computed:{
     products(){
       return this.$store.state.products
     }
+  },
+  methods:{
+    logout() {
+      this.authLoader = true;
+
+      this.$store
+        .dispatch("logout")
+        .then((user) => {
+          this.authLoader = false;
+
+
+          this.$router.push("/");
+        })
+        .catch((error) => {
+          this.authLoader = false;
+          console.log( error);
+
+        });
+    },
   }
+
 };
 </script>
